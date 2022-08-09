@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blento UI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        box-sizing: border-box;
+        width: 100%;
+      }
+      #theme-select{
+        padding-block: 0.7rem;
+        padding-inline: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+        border-radius: 0.375rem;
+        text-align: center;
+      }
+      #theme-select > option {
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding-block: 0.5rem;
+        padding-inline: 0.9rem;
+        text-align: start;
+      }
+      #theme-select:not(:last-child){
+        margin-bottom: 0.5rem;
+      }
+      .grid-box {
+        display: grid;
+        margin-inline: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+      }
+      @media (min-width: 1024px) {
+        .grid-box {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+      .rect {
+        /* width: 8rem; */
+        height: 20rem;
+      }
+    </style>
+  </head>
+  <body class="theme-monokai">
+    <nav class="nav">
+      <div class="nav-brand">
+        <img src="https://fakeimg.pl/100x100/?text=img">
+        <h1>Brand Name</h1>
+      </div>
+      <div class="nav-list">
+        <div class="nav-item">Item 1</div>
+        <div class="nav-item">Item 2</div>
+        <div class="nav-item">Item 3</div>
+        <div class="nav-item nav-avatar">
+          <img src="https://fakeimg.pl/100x100/?text=img">
+        </div>
+      </div>
+    </nav>
+    <div class="container-bl nav-sibling">
+      <div class="flex-center mb-10">
+        <h1 class="landing-title">Blento UI</h1>
+        <p class="landing-description">A Simple Design System</p>
+        <select id="theme-select">
+          <option value="monokai">Monokai</option>
+          <option value="light-black">Light Black</option>
+          <option value="black-gray">Black Gray</option>
+          <option value="blue-gray">Blue Gray</option>
+          <option value="atom-dark">Atom Dark</option>
+          <option value="light">Light</option>
+        </select>
+        <button class="landing-btn">Hello !</button>
+      </div>
+      <!-- Color Palette -->
+      <div class="grid-box">
+        <div class="rect bg-red-dark"></div>
+        <div class="rect bg-red-light"></div>
+        <div class="rect bg-pink-dark"></div>
+        <div class="rect bg-pink-light"></div>
+        <div class="rect bg-fuchsia-dark"></div>
+        <div class="rect bg-fuchsia-light"></div>
+        <div class="rect bg-orange-dark"></div>
+        <div class="rect bg-orange-light"></div>
+        <div class="rect bg-yellow-dark"></div>
+        <div class="rect bg-yellow-light"></div>
+        <div class="rect bg-green-dark"></div>
+        <div class="rect bg-green-light"></div>
+        <div class="rect bg-emerald-dark"></div>
+        <div class="rect bg-emerald-light"></div>
+        <div class="rect bg-teal-dark"></div>
+        <div class="rect bg-teal-light"></div>
+        <div class="rect bg-cyan-dark"></div>
+        <div class="rect bg-cyan-light"></div>
+        <div class="rect bg-blue-dark"></div>
+        <div class="rect bg-blue-light"></div>
+        <div class="rect bg-sky-dark"></div>
+        <div class="rect bg-sky-light"></div>
+        <div class="rect bg-purple-dark"></div>
+        <div class="rect bg-purple-light"></div>
+      </div>
+      <!-- Typographpy Content -->
+      <div style="text-align: start">
+        <h1 class="page-title">Page Heading 1</h1>
+        <div>
+          <h2 class="page-heading">Page Topic</h2>
+          <p class="page-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+            voluptates quos ab placeat eveniet! Ea, eveniet sequi, tempore veniam
+            soluta doloribus quo, dolor natus impedit aut aliquam quis provident
+            officia. Aliquam quisquam dolorum pariatur molestiae quis! Adipisci,
+            nemo nihil alias quod excepturi vel incidunt fugiat accusamus eligendi
+            culpa repellat voluptas animi reprehenderit, modi aut molestiae
+            facilis asperiores vero nisi doloremque ullam sequi? Laborum voluptas
+            dignissimos impedit nostrum incidunt.
+          </p>
+          <p class="page-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+            voluptates quos ab placeat eveniet! Ea, eveniet sequi, tempore veniam
+            soluta doloribus quo, dolor natus impedit aut aliquam quis provident
+            officia. Aliquam quisquam dolorum pariatur molestiae quis! Adipisci,
+            nemo nihil alias quod excepturi vel incidunt fugiat accusamus eligendi
+            culpa repellat voluptas animi reprehenderit, modi aut molestiae
+            facilis asperiores vero nisi doloremque ullam sequi? Laborum voluptas
+            dignissimos impedit nostrum incidunt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const themeSelect = document.getElementsByTagName("select")[0];
+      document.body.setAttribute("class", "theme-"+themeSelect.value)
+      themeSelect.addEventListener("change", function(){
+        document.body.setAttribute("class", "theme-"+themeSelect.value)
+      })
+    </script>
+  </body>
+</html>
