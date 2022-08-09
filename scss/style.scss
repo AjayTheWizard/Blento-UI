@@ -1,0 +1,25 @@
+@import "variable";
+@import "color";
+@import "utils";
+@import "typography";
+@import "spacing";
+@import "navbar";
+
+.container-bl {
+  width: auto;
+  padding-inline: 2.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 968px) {
+    width: 80vw;
+    padding-inline: 0;
+  }
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

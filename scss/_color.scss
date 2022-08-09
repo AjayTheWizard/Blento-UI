@@ -1,0 +1,84 @@
+$colors: gray, light-black, black-gray, blue-gray, atom-dark, monokai, red-light,
+  red-dark, orange-light, orange-dark, yellow-light, yellow-dark, green-light,
+  green-dark, teal-light, teal-dark, blue-light, blue-dark, sky-light, sky-dark,
+  purple-light, purple-dark, cyan-light, cyan-dark, pink-light, pink-dark,
+  emerald-light, emerald-dark, fuchsia-light, fuchsia-dark;
+
+.theme-gray {
+  background-color: var(--bl-gray);
+  --bl-theme-bg: var(--bl-gray);
+  --bl-theme-color: #fff;
+  & > * {
+    color: #fff;
+  }
+}
+.theme-light-black {
+  background-color: var(--bl-light-black);
+  --bl-theme-bg: var(--bl-light-black);
+  --bl-theme-color: #fff;
+  & > * {
+    color: #fff;
+  }
+}
+.theme-black-gray {
+  background-color: var(--bl-black-gray);
+  --bl-theme-bg: var(--bl-black-gray);
+  --bl-theme-color: #fff;
+  & > * {
+    color: #fff;
+  }
+}
+.theme-blue-gray {
+  background-color: var(--bl-blue-gray);
+  --bl-theme-bg: var(--bl-blue-gray);
+  --bl-theme-color: #fff;
+
+  & > * {
+    color: #fff;
+  }
+}
+.theme-atom-dark {
+  background-color: var(--bl-atom-dark);
+  --bl-theme-bg: var(--bl-atom-dark);
+  --bl-theme-color: #fff;
+  & > * {
+    color: #fff;
+  }
+}
+.theme-monokai {
+  background-color: var(--bl-monokai);
+  --bl-theme-bg: var(--bl-monokai);
+  --bl-theme-color: #fdf9f3;
+  & > * {
+    color: #fdf9f3;
+  }
+}
+.theme-light {
+  background-color: #fff;
+  --bl-theme-bg: #fff;
+  --bl-theme-color: #1f1f1f;
+  & > * {
+    color: #1f1f1f;
+  }
+}
+.white {
+  color: #fff;
+}
+.bg-white {
+  background-color: #fff;
+}
+.black {
+  color: #000;
+}
+.bg-black {
+  background-color: #000;
+}
+
+@each $color in $colors {
+  .bg-#{$color} {
+    background-color: var(--bl-#{$color});
+  }
+  .#{$color} {
+    color: var(--bl-#{$color});
+  }
+}
