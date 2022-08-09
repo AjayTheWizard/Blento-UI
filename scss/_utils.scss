@@ -1,0 +1,6 @@
+@mixin property($prop, $value) {
+  $prop: $value;
+  @media (min-width: 1024px) {
+    $prop: $value;
+  }
+}

@@ -94,185 +94,425 @@
 .bg-black {
   background-color: #000; }
 
-.bg-gray {
+.bg-gray:not(.btn-filled.bg-gray, .btn-outlined.bg-gray) {
   background-color: var(--bl-gray); }
 
-.gray {
+.btn-filled.bg-gray,
+.btn-outlined.bg-gray {
+  --bl-bg: var(--bl-gray); }
+
+.gray:not(.btn-filled.gray, .btn-outlined.gray) {
   color: var(--bl-gray); }
 
-.bg-light-black {
+.btn-filled.gray,
+.btn-outlined.gray {
+  --bl-color: var(--bl-gray); }
+
+.bg-light-black:not(.btn-filled.bg-light-black, .btn-outlined.bg-light-black) {
   background-color: var(--bl-light-black); }
 
-.light-black {
+.btn-filled.bg-light-black,
+.btn-outlined.bg-light-black {
+  --bl-bg: var(--bl-light-black); }
+
+.light-black:not(.btn-filled.light-black, .btn-outlined.light-black) {
   color: var(--bl-light-black); }
 
-.bg-black-gray {
+.btn-filled.light-black,
+.btn-outlined.light-black {
+  --bl-color: var(--bl-light-black); }
+
+.bg-black-gray:not(.btn-filled.bg-black-gray, .btn-outlined.bg-black-gray) {
   background-color: var(--bl-black-gray); }
 
-.black-gray {
+.btn-filled.bg-black-gray,
+.btn-outlined.bg-black-gray {
+  --bl-bg: var(--bl-black-gray); }
+
+.black-gray:not(.btn-filled.black-gray, .btn-outlined.black-gray) {
   color: var(--bl-black-gray); }
 
-.bg-blue-gray {
+.btn-filled.black-gray,
+.btn-outlined.black-gray {
+  --bl-color: var(--bl-black-gray); }
+
+.bg-blue-gray:not(.btn-filled.bg-blue-gray, .btn-outlined.bg-blue-gray) {
   background-color: var(--bl-blue-gray); }
 
-.blue-gray {
+.btn-filled.bg-blue-gray,
+.btn-outlined.bg-blue-gray {
+  --bl-bg: var(--bl-blue-gray); }
+
+.blue-gray:not(.btn-filled.blue-gray, .btn-outlined.blue-gray) {
   color: var(--bl-blue-gray); }
 
-.bg-atom-dark {
+.btn-filled.blue-gray,
+.btn-outlined.blue-gray {
+  --bl-color: var(--bl-blue-gray); }
+
+.bg-atom-dark:not(.btn-filled.bg-atom-dark, .btn-outlined.bg-atom-dark) {
   background-color: var(--bl-atom-dark); }
 
-.atom-dark {
+.btn-filled.bg-atom-dark,
+.btn-outlined.bg-atom-dark {
+  --bl-bg: var(--bl-atom-dark); }
+
+.atom-dark:not(.btn-filled.atom-dark, .btn-outlined.atom-dark) {
   color: var(--bl-atom-dark); }
 
-.bg-monokai {
+.btn-filled.atom-dark,
+.btn-outlined.atom-dark {
+  --bl-color: var(--bl-atom-dark); }
+
+.bg-monokai:not(.btn-filled.bg-monokai, .btn-outlined.bg-monokai) {
   background-color: var(--bl-monokai); }
 
-.monokai {
+.btn-filled.bg-monokai,
+.btn-outlined.bg-monokai {
+  --bl-bg: var(--bl-monokai); }
+
+.monokai:not(.btn-filled.monokai, .btn-outlined.monokai) {
   color: var(--bl-monokai); }
 
-.bg-red-light {
+.btn-filled.monokai,
+.btn-outlined.monokai {
+  --bl-color: var(--bl-monokai); }
+
+.bg-red-light:not(.btn-filled.bg-red-light, .btn-outlined.bg-red-light) {
   background-color: var(--bl-red-light); }
 
-.red-light {
+.btn-filled.bg-red-light,
+.btn-outlined.bg-red-light {
+  --bl-bg: var(--bl-red-light); }
+
+.red-light:not(.btn-filled.red-light, .btn-outlined.red-light) {
   color: var(--bl-red-light); }
 
-.bg-red-dark {
+.btn-filled.red-light,
+.btn-outlined.red-light {
+  --bl-color: var(--bl-red-light); }
+
+.bg-red-dark:not(.btn-filled.bg-red-dark, .btn-outlined.bg-red-dark) {
   background-color: var(--bl-red-dark); }
 
-.red-dark {
+.btn-filled.bg-red-dark,
+.btn-outlined.bg-red-dark {
+  --bl-bg: var(--bl-red-dark); }
+
+.red-dark:not(.btn-filled.red-dark, .btn-outlined.red-dark) {
   color: var(--bl-red-dark); }
 
-.bg-orange-light {
+.btn-filled.red-dark,
+.btn-outlined.red-dark {
+  --bl-color: var(--bl-red-dark); }
+
+.bg-orange-light:not(.btn-filled.bg-orange-light, .btn-outlined.bg-orange-light) {
   background-color: var(--bl-orange-light); }
 
-.orange-light {
+.btn-filled.bg-orange-light,
+.btn-outlined.bg-orange-light {
+  --bl-bg: var(--bl-orange-light); }
+
+.orange-light:not(.btn-filled.orange-light, .btn-outlined.orange-light) {
   color: var(--bl-orange-light); }
 
-.bg-orange-dark {
+.btn-filled.orange-light,
+.btn-outlined.orange-light {
+  --bl-color: var(--bl-orange-light); }
+
+.bg-orange-dark:not(.btn-filled.bg-orange-dark, .btn-outlined.bg-orange-dark) {
   background-color: var(--bl-orange-dark); }
 
-.orange-dark {
+.btn-filled.bg-orange-dark,
+.btn-outlined.bg-orange-dark {
+  --bl-bg: var(--bl-orange-dark); }
+
+.orange-dark:not(.btn-filled.orange-dark, .btn-outlined.orange-dark) {
   color: var(--bl-orange-dark); }
 
-.bg-yellow-light {
+.btn-filled.orange-dark,
+.btn-outlined.orange-dark {
+  --bl-color: var(--bl-orange-dark); }
+
+.bg-yellow-light:not(.btn-filled.bg-yellow-light, .btn-outlined.bg-yellow-light) {
   background-color: var(--bl-yellow-light); }
 
-.yellow-light {
+.btn-filled.bg-yellow-light,
+.btn-outlined.bg-yellow-light {
+  --bl-bg: var(--bl-yellow-light); }
+
+.yellow-light:not(.btn-filled.yellow-light, .btn-outlined.yellow-light) {
   color: var(--bl-yellow-light); }
 
-.bg-yellow-dark {
+.btn-filled.yellow-light,
+.btn-outlined.yellow-light {
+  --bl-color: var(--bl-yellow-light); }
+
+.bg-yellow-dark:not(.btn-filled.bg-yellow-dark, .btn-outlined.bg-yellow-dark) {
   background-color: var(--bl-yellow-dark); }
 
-.yellow-dark {
+.btn-filled.bg-yellow-dark,
+.btn-outlined.bg-yellow-dark {
+  --bl-bg: var(--bl-yellow-dark); }
+
+.yellow-dark:not(.btn-filled.yellow-dark, .btn-outlined.yellow-dark) {
   color: var(--bl-yellow-dark); }
 
-.bg-green-light {
+.btn-filled.yellow-dark,
+.btn-outlined.yellow-dark {
+  --bl-color: var(--bl-yellow-dark); }
+
+.bg-green-light:not(.btn-filled.bg-green-light, .btn-outlined.bg-green-light) {
   background-color: var(--bl-green-light); }
 
-.green-light {
+.btn-filled.bg-green-light,
+.btn-outlined.bg-green-light {
+  --bl-bg: var(--bl-green-light); }
+
+.green-light:not(.btn-filled.green-light, .btn-outlined.green-light) {
   color: var(--bl-green-light); }
 
-.bg-green-dark {
+.btn-filled.green-light,
+.btn-outlined.green-light {
+  --bl-color: var(--bl-green-light); }
+
+.bg-green-dark:not(.btn-filled.bg-green-dark, .btn-outlined.bg-green-dark) {
   background-color: var(--bl-green-dark); }
 
-.green-dark {
+.btn-filled.bg-green-dark,
+.btn-outlined.bg-green-dark {
+  --bl-bg: var(--bl-green-dark); }
+
+.green-dark:not(.btn-filled.green-dark, .btn-outlined.green-dark) {
   color: var(--bl-green-dark); }
 
-.bg-teal-light {
+.btn-filled.green-dark,
+.btn-outlined.green-dark {
+  --bl-color: var(--bl-green-dark); }
+
+.bg-teal-light:not(.btn-filled.bg-teal-light, .btn-outlined.bg-teal-light) {
   background-color: var(--bl-teal-light); }
 
-.teal-light {
+.btn-filled.bg-teal-light,
+.btn-outlined.bg-teal-light {
+  --bl-bg: var(--bl-teal-light); }
+
+.teal-light:not(.btn-filled.teal-light, .btn-outlined.teal-light) {
   color: var(--bl-teal-light); }
 
-.bg-teal-dark {
+.btn-filled.teal-light,
+.btn-outlined.teal-light {
+  --bl-color: var(--bl-teal-light); }
+
+.bg-teal-dark:not(.btn-filled.bg-teal-dark, .btn-outlined.bg-teal-dark) {
   background-color: var(--bl-teal-dark); }
 
-.teal-dark {
+.btn-filled.bg-teal-dark,
+.btn-outlined.bg-teal-dark {
+  --bl-bg: var(--bl-teal-dark); }
+
+.teal-dark:not(.btn-filled.teal-dark, .btn-outlined.teal-dark) {
   color: var(--bl-teal-dark); }
 
-.bg-blue-light {
+.btn-filled.teal-dark,
+.btn-outlined.teal-dark {
+  --bl-color: var(--bl-teal-dark); }
+
+.bg-blue-light:not(.btn-filled.bg-blue-light, .btn-outlined.bg-blue-light) {
   background-color: var(--bl-blue-light); }
 
-.blue-light {
+.btn-filled.bg-blue-light,
+.btn-outlined.bg-blue-light {
+  --bl-bg: var(--bl-blue-light); }
+
+.blue-light:not(.btn-filled.blue-light, .btn-outlined.blue-light) {
   color: var(--bl-blue-light); }
 
-.bg-blue-dark {
+.btn-filled.blue-light,
+.btn-outlined.blue-light {
+  --bl-color: var(--bl-blue-light); }
+
+.bg-blue-dark:not(.btn-filled.bg-blue-dark, .btn-outlined.bg-blue-dark) {
   background-color: var(--bl-blue-dark); }
 
-.blue-dark {
+.btn-filled.bg-blue-dark,
+.btn-outlined.bg-blue-dark {
+  --bl-bg: var(--bl-blue-dark); }
+
+.blue-dark:not(.btn-filled.blue-dark, .btn-outlined.blue-dark) {
   color: var(--bl-blue-dark); }
 
-.bg-sky-light {
+.btn-filled.blue-dark,
+.btn-outlined.blue-dark {
+  --bl-color: var(--bl-blue-dark); }
+
+.bg-sky-light:not(.btn-filled.bg-sky-light, .btn-outlined.bg-sky-light) {
   background-color: var(--bl-sky-light); }
 
-.sky-light {
+.btn-filled.bg-sky-light,
+.btn-outlined.bg-sky-light {
+  --bl-bg: var(--bl-sky-light); }
+
+.sky-light:not(.btn-filled.sky-light, .btn-outlined.sky-light) {
   color: var(--bl-sky-light); }
 
-.bg-sky-dark {
+.btn-filled.sky-light,
+.btn-outlined.sky-light {
+  --bl-color: var(--bl-sky-light); }
+
+.bg-sky-dark:not(.btn-filled.bg-sky-dark, .btn-outlined.bg-sky-dark) {
   background-color: var(--bl-sky-dark); }
 
-.sky-dark {
+.btn-filled.bg-sky-dark,
+.btn-outlined.bg-sky-dark {
+  --bl-bg: var(--bl-sky-dark); }
+
+.sky-dark:not(.btn-filled.sky-dark, .btn-outlined.sky-dark) {
   color: var(--bl-sky-dark); }
 
-.bg-purple-light {
+.btn-filled.sky-dark,
+.btn-outlined.sky-dark {
+  --bl-color: var(--bl-sky-dark); }
+
+.bg-purple-light:not(.btn-filled.bg-purple-light, .btn-outlined.bg-purple-light) {
   background-color: var(--bl-purple-light); }
 
-.purple-light {
+.btn-filled.bg-purple-light,
+.btn-outlined.bg-purple-light {
+  --bl-bg: var(--bl-purple-light); }
+
+.purple-light:not(.btn-filled.purple-light, .btn-outlined.purple-light) {
   color: var(--bl-purple-light); }
 
-.bg-purple-dark {
+.btn-filled.purple-light,
+.btn-outlined.purple-light {
+  --bl-color: var(--bl-purple-light); }
+
+.bg-purple-dark:not(.btn-filled.bg-purple-dark, .btn-outlined.bg-purple-dark) {
   background-color: var(--bl-purple-dark); }
 
-.purple-dark {
+.btn-filled.bg-purple-dark,
+.btn-outlined.bg-purple-dark {
+  --bl-bg: var(--bl-purple-dark); }
+
+.purple-dark:not(.btn-filled.purple-dark, .btn-outlined.purple-dark) {
   color: var(--bl-purple-dark); }
 
-.bg-cyan-light {
+.btn-filled.purple-dark,
+.btn-outlined.purple-dark {
+  --bl-color: var(--bl-purple-dark); }
+
+.bg-cyan-light:not(.btn-filled.bg-cyan-light, .btn-outlined.bg-cyan-light) {
   background-color: var(--bl-cyan-light); }
 
-.cyan-light {
+.btn-filled.bg-cyan-light,
+.btn-outlined.bg-cyan-light {
+  --bl-bg: var(--bl-cyan-light); }
+
+.cyan-light:not(.btn-filled.cyan-light, .btn-outlined.cyan-light) {
   color: var(--bl-cyan-light); }
 
-.bg-cyan-dark {
+.btn-filled.cyan-light,
+.btn-outlined.cyan-light {
+  --bl-color: var(--bl-cyan-light); }
+
+.bg-cyan-dark:not(.btn-filled.bg-cyan-dark, .btn-outlined.bg-cyan-dark) {
   background-color: var(--bl-cyan-dark); }
 
-.cyan-dark {
+.btn-filled.bg-cyan-dark,
+.btn-outlined.bg-cyan-dark {
+  --bl-bg: var(--bl-cyan-dark); }
+
+.cyan-dark:not(.btn-filled.cyan-dark, .btn-outlined.cyan-dark) {
   color: var(--bl-cyan-dark); }
 
-.bg-pink-light {
+.btn-filled.cyan-dark,
+.btn-outlined.cyan-dark {
+  --bl-color: var(--bl-cyan-dark); }
+
+.bg-pink-light:not(.btn-filled.bg-pink-light, .btn-outlined.bg-pink-light) {
   background-color: var(--bl-pink-light); }
 
-.pink-light {
+.btn-filled.bg-pink-light,
+.btn-outlined.bg-pink-light {
+  --bl-bg: var(--bl-pink-light); }
+
+.pink-light:not(.btn-filled.pink-light, .btn-outlined.pink-light) {
   color: var(--bl-pink-light); }
 
-.bg-pink-dark {
+.btn-filled.pink-light,
+.btn-outlined.pink-light {
+  --bl-color: var(--bl-pink-light); }
+
+.bg-pink-dark:not(.btn-filled.bg-pink-dark, .btn-outlined.bg-pink-dark) {
   background-color: var(--bl-pink-dark); }
 
-.pink-dark {
+.btn-filled.bg-pink-dark,
+.btn-outlined.bg-pink-dark {
+  --bl-bg: var(--bl-pink-dark); }
+
+.pink-dark:not(.btn-filled.pink-dark, .btn-outlined.pink-dark) {
   color: var(--bl-pink-dark); }
 
-.bg-emerald-light {
+.btn-filled.pink-dark,
+.btn-outlined.pink-dark {
+  --bl-color: var(--bl-pink-dark); }
+
+.bg-emerald-light:not(.btn-filled.bg-emerald-light, .btn-outlined.bg-emerald-light) {
   background-color: var(--bl-emerald-light); }
 
-.emerald-light {
+.btn-filled.bg-emerald-light,
+.btn-outlined.bg-emerald-light {
+  --bl-bg: var(--bl-emerald-light); }
+
+.emerald-light:not(.btn-filled.emerald-light, .btn-outlined.emerald-light) {
   color: var(--bl-emerald-light); }
 
-.bg-emerald-dark {
+.btn-filled.emerald-light,
+.btn-outlined.emerald-light {
+  --bl-color: var(--bl-emerald-light); }
+
+.bg-emerald-dark:not(.btn-filled.bg-emerald-dark, .btn-outlined.bg-emerald-dark) {
   background-color: var(--bl-emerald-dark); }
 
-.emerald-dark {
+.btn-filled.bg-emerald-dark,
+.btn-outlined.bg-emerald-dark {
+  --bl-bg: var(--bl-emerald-dark); }
+
+.emerald-dark:not(.btn-filled.emerald-dark, .btn-outlined.emerald-dark) {
   color: var(--bl-emerald-dark); }
 
-.bg-fuchsia-light {
+.btn-filled.emerald-dark,
+.btn-outlined.emerald-dark {
+  --bl-color: var(--bl-emerald-dark); }
+
+.bg-fuchsia-light:not(.btn-filled.bg-fuchsia-light, .btn-outlined.bg-fuchsia-light) {
   background-color: var(--bl-fuchsia-light); }
 
-.fuchsia-light {
+.btn-filled.bg-fuchsia-light,
+.btn-outlined.bg-fuchsia-light {
+  --bl-bg: var(--bl-fuchsia-light); }
+
+.fuchsia-light:not(.btn-filled.fuchsia-light, .btn-outlined.fuchsia-light) {
   color: var(--bl-fuchsia-light); }
 
-.bg-fuchsia-dark {
+.btn-filled.fuchsia-light,
+.btn-outlined.fuchsia-light {
+  --bl-color: var(--bl-fuchsia-light); }
+
+.bg-fuchsia-dark:not(.btn-filled.bg-fuchsia-dark, .btn-outlined.bg-fuchsia-dark) {
   background-color: var(--bl-fuchsia-dark); }
 
-.fuchsia-dark {
+.btn-filled.bg-fuchsia-dark,
+.btn-outlined.bg-fuchsia-dark {
+  --bl-bg: var(--bl-fuchsia-dark); }
+
+.fuchsia-dark:not(.btn-filled.fuchsia-dark, .btn-outlined.fuchsia-dark) {
   color: var(--bl-fuchsia-dark); }
+
+.btn-filled.fuchsia-dark,
+.btn-outlined.fuchsia-dark {
+  --bl-color: var(--bl-fuchsia-dark); }
 
 a {
   text-decoration: none; }
@@ -2124,18 +2364,56 @@ a {
   height: 2.5rem; }
 
 .nav-brand h1 {
-  font-size: 1.875rem;
-  cursor: pointer; }
-  @media (min-width: 1024px) {
+  font-size: 1.575rem;
+  cursor: pointer;
+  text-align: center; }
+  @media (min-width: 960px) {
     .nav-brand h1 {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      text-align: inherit; } }
+
+.nav-toggle {
+  margin-right: 2.3rem;
+  cursor: pointer;
+  font-size: 2rem !important;
+  color: #fff; }
+  @media (min-width: 1024px) {
+    .nav-toggle {
+      display: none !important; } }
+
+.bl-hide {
+  display: none !important; }
+  @media (min-width: 1024px) {
+    .bl-hide {
+      display: flex !important; } }
 
 .nav-list {
+  gap: 1rem;
+  z-index: 8;
   display: flex;
-  align-items: center; }
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transition: 600ms;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: center;
+  padding-block: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .nav-list {
+      width: unset;
+      background-color: transparent;
+      flex-direction: row;
+      transform: unset;
+      position: static; } }
 
 .nav-item:last-child {
-  margin-right: 2rem; }
+  margin-right: 0; }
+  @media (min-width: 1024px) {
+    .nav-item:last-child {
+      margin-right: 2rem; } }
 
 .nav-item:hover {
   filter: brightness(1); }
@@ -2144,12 +2422,123 @@ a {
   filter: brightness(0.9);
   cursor: pointer;
   font-size: 1.125rem;
-  margin-inline: 0.5rem;
   font-weight: 600; }
 
 .nav-item + .nav-avatar > img {
   height: 3rem;
   border-radius: 50%; }
+
+.simple-footer {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding-block: 1.5rem;
+  border-top: 2px solid var(--bl-theme-color);
+  align-items: center;
+  padding-inline: 2rem; }
+  @media (min-width: 968px) {
+    .simple-footer {
+      width: 85vw; } }
+
+.simple-footer > .brand {
+  font-size: 1rem; }
+
+.simple-footer > .links {
+  display: flex;
+  gap: 1rem; }
+
+.simple-footer > .links > .link:hover {
+  filter: brightness(1); }
+
+.simple-footer > .links > .link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  filter: brightness(0.9);
+  color: #4353ff; }
+
+.footer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding-block: 1.5rem;
+  border-top: 2px solid var(--bl-theme-color);
+  padding-inline: 2rem; }
+  @media (min-width: 1024px) {
+    .footer {
+      width: 85vw; } }
+
+.footer > .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2rem; }
+
+.footer > .footer-cols > .footer-row {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600; }
+
+.footer > .footer-cols > .footer-row > * {
+  cursor: pointer; }
+
+.footer > .footer-cols > .footer-row > *:not(.row-title) {
+  filter: brightness(0.6); }
+
+.footer > .footer-cols > .footer-row > .row-title,
+.footer > .footer-cols > .footer-row > *:not(.row-title):hover {
+  filter: brightness(1); }
+
+.footer > .brand {
+  font-size: 2rem; }
+
+.footer > .description {
+  font-size: 1rem; }
+
+.btn-filled {
+  padding-inline: 1.4rem;
+  font-size: 1.25rem;
+  padding-block: 0.9rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border-width: 0;
+  color: var(--bl-color, --bl-theme-bg);
+  background-color: var(--bl-bg, --bl-theme-color);
+  transition-duration: 300ms;
+  cursor: pointer; }
+
+.btn-filled:focus {
+  box-shadow: 0 0 0 4px var(--bl-bg); }
+
+.btn-filled.sharp {
+  border-radius: 0; }
+
+.btn-outlined {
+  padding-inline: 1.4rem;
+  font-size: 1.25rem;
+  padding-block: 0.9rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: transparent !important;
+  border-width: 4px;
+  border-style: solid;
+  border-color: var(--bl-color);
+  color: var(--bl-bg, --bl-theme-color);
+  cursor: pointer; }
+
+.btn-outlined:focus {
+  box-shadow: 0 0 0 2px; }
+
+.btn-outlined.sharp {
+  border-radius: 0; }
 
 .container-bl {
   width: auto;

@@ -1,0 +1,37 @@
+.btn-filled {
+  padding-inline: 1.4rem;
+  font-size: 1.25rem;
+  padding-block: 0.9rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border-width: 0;
+  color: var(--bl-color, --bl-theme-bg);
+  background-color: var(--bl-bg, --bl-theme-color);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+.btn-filled:focus {
+  box-shadow: 0 0 0 4px var(--bl-bg);
+}
+.btn-filled.sharp {
+  border-radius: 0;
+}
+.btn-outlined {
+  padding-inline: 1.4rem;
+  font-size: 1.25rem;
+  padding-block: 0.9rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: transparent !important;
+  border-width: 4px;
+  border-style: solid;
+  border-color: var(--bl-color);
+  color: var(--bl-bg, --bl-theme-color);
+  cursor: pointer;
+}
+.btn-outlined:focus {
+  box-shadow: 0 0 0 2px;
+}
+.btn-outlined.sharp {
+  border-radius: 0;
+}

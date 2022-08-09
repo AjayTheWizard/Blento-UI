@@ -1,0 +1,30 @@
+$size-prop: (
+  "m": "margin",
+  "mt": "margin-top",
+  "mb": "margin-bottom",
+  "ml": "margin-left",
+  "mr": "margin-right",
+  "mx": "margin-block",
+  "my": "margin-inline",
+  "p": "padding",
+  "pt": "padding-top",
+  "pb": "padding-bottom",
+  "pl": "padding-left",
+  "pr": "padding-right",
+  "px": "padding-block",
+  "py": "padding-inline",
+);
+
+@each $short, $long in $size-prop {
+  @for $i from 1 through 18 {
+    .#{$short}-#{$i} {
+      #{$long}: $i * 0.25rem;
+    }
+    @media (min-width: 1024px) {
+      .lg-#{$short}-#{$i} {
+        #{$long}: $i * 0.25rem;
+      }
+    }
+  }
+}
+

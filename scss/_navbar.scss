@@ -25,21 +25,58 @@
   height: 2.5rem;
 }
 .nav-brand h1 {
-  font-size: 1.875rem;
+  font-size: 1.575rem;
   cursor: pointer;
-  @media (min-width: 1024px) {
+  text-align: center;
+  @media (min-width: 960px) {
     font-size: 2rem;
+    text-align: inherit;
+  }
+}
+.nav-toggle {
+  margin-right: 2.3rem;
+  cursor: pointer;
+  font-size: 2rem !important;
+  color: #fff;
+  @media (min-width: 1024px) {
+    display: none !important;
+  }
+}
+.bl-hide {
+  display: none !important;
+  @media (min-width: 1024px) {
+    display: flex !important;
   }
 }
 .nav-list {
+  gap: 1rem;
+  z-index: 8;
   display: flex;
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transition: 600ms;
+  transform: translateX(-50%);
+  flex-direction: column;
   align-items: center;
+  padding-block: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  @media (min-width: 1024px) {
+    width: unset;
+    background-color: transparent;
+    flex-direction: row;
+    transform: unset;
+    position: static;
+  }
 }
 
-.nav-item:last-child{
-  margin-right: 2rem;
+.nav-item:last-child {
+  margin-right: 0;
+  @media (min-width: 1024px) {
+    margin-right: 2rem;
+  }
 }
-
 .nav-item:hover {
   filter: brightness(1);
 }
@@ -47,7 +84,6 @@
   filter: brightness(0.9);
   cursor: pointer;
   font-size: 1.125rem;
-  margin-inline: 0.5rem;
   font-weight: 600;
 }
 

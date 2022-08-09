@@ -75,10 +75,18 @@ $colors: gray, light-black, black-gray, blue-gray, atom-dark, monokai, red-light
 }
 
 @each $color in $colors {
-  .bg-#{$color} {
+  .bg-#{$color}:not(.btn-filled.bg-#{$color}, .btn-outlined.bg-#{$color}) {
     background-color: var(--bl-#{$color});
   }
-  .#{$color} {
+  .btn-filled.bg-#{$color},
+  .btn-outlined.bg-#{$color} {
+    --bl-bg: var(--bl-#{$color});
+  }
+  .#{$color}:not(.btn-filled.#{$color}, .btn-outlined.#{$color}) {
     color: var(--bl-#{$color});
+  }
+  .btn-filled.#{$color},
+  .btn-outlined.#{$color} {
+    --bl-color: var(--bl-#{$color});
   }
 }
